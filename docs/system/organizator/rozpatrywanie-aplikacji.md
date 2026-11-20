@@ -5,10 +5,6 @@ title: Rozpatrywanie aplikacji
 
 # Rozpatrywanie aplikacji
 
-:::warning[Szkic]
-Szkic napisany na podstawie działania wersji 1 i decyzji podjętych przy stronie „Aplikacja wolontariacka”. Opisuje, jak rozpatrywanie aplikacji ma działać.
-:::
-
 Rozpatrywanie aplikacji to podjęcie decyzji, czy osoba, która złożyła aplikację wolontariacką, zostaje przyjęta do działu. Ta strona opisuje, kto decyduje, co widzi przy aplikacji, jakie skutki ma decyzja i jak działa pierwszeństwo działu głównego. Formularz i to, co widzi osoba aplikująca, opisuje strona [Aplikacja wolontariacka](../wolontariusz/aplikacja.md).
 
 ## Założenia

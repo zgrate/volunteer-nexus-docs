@@ -6,6 +6,12 @@ title: Uprawnienia i role
 # Uprawnienia i role
 
 :::note[Do opisania]
+Oznaczenie a uprawnienia:
+
+- samo oznaczenie osoby jako organizatora, koordynatora albo lidera nie daje żadnych uprawnień,
+- uprawnienia daje rola – osobno przydzielany zestaw uprawnień,
+- przy dodawaniu organizatora system może zasugerować uprawnienia, ale przydziela się je osobno.
+
 Uprawnienia opisane dotąd na innych stronach.
 
 Ze strony [Rozpatrywanie aplikacji](../organizator/rozpatrywanie-aplikacji.md) – pięć niezależnych uprawnień:
@@ -22,6 +28,12 @@ Ze strony [Rejestracja i logowanie](../wolontariusz/rejestracja-i-logowanie.md):
 - adres e-mail konta zmienia administrator,
 - listę dostawców logowania ustawia administrator,
 - to, co osoba widzi po zalogowaniu, wynika z jej uprawnień, a nie ze sposobu logowania.
+
+Ze strony [Działy i zespoły](../organizator/dzialy-i-zespoly.md):
+
+- uprawnienia do działu działają we własnych działach osoby: organizator z uprawnieniem „zarządzanie osobami w dziale” zarządza członkami działów, do których sam należy,
+- działy tworzy, zmienia i usuwa organizator, którego rola na to pozwala,
+- gdy osoba przestaje być członkiem działu, jej uprawnienia w tym dziale przestają działać.
 
 Ze strony [Definicje i podstawowe typy zmian](../zmiany/definicje.md):
 

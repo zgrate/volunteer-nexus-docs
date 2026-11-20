@@ -13,6 +13,8 @@ Z innych stron do profilu należą także:
 - lista aplikacji osoby i ich stan, powód odrzucenia, poprawianie i wycofanie aplikacji oraz zgoda na cofnięcie odrzucenia (zob. [Aplikacja wolontariacka](aplikacja.md)),
 - zmiana języka, lista sesji i wylogowanie pozostałych urządzeń, włączenie kodu logowania na Telegramie (zob. [Rejestracja i logowanie](rejestracja-i-logowanie.md)),
 - pola niestandardowe wypełniane w profilu,
-- adres e-mail konta, którego osoba nie zmienia sama.
+- adres e-mail konta, którego osoba nie zmienia sama,
+- udostępnianie adresu e-mail i kontaktu na Telegramie innym wolontariuszom; bez niego dane kontaktowe widzi tylko organizator działu i administrator (zob. [Działy i zespoły](../organizator/dzialy-i-zespoly.md)),
+- członkostwa osoby: działy, zespoły i informacja, który dział jest działem głównym.
 
 :::

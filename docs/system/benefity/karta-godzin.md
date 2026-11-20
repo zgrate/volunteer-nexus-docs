@@ -16,4 +16,6 @@ Zasady opisane dotąd na stronach [Aplikacja wolontariacka](../wolontariusz/apli
 
 Ze strony [Definicje i podstawowe typy zmian](../zmiany/definicje.md): system sumuje godziny zaplanowane dla wolontariusza i porównuje je z zadeklarowanymi; przekroczenie daje ostrzeżenie, nie blokadę.
 
+Ze strony [Działy i zespoły](../organizator/dzialy-i-zespoly.md): usunięcie osoby z działu usuwa godziny zadeklarowane dla tego działu, a przepracowane zostawia; usunięcie z wydarzenia usuwa także przepracowane godziny i benefity. Usunięte dane trafiają do dziennika audytu.
+
 :::

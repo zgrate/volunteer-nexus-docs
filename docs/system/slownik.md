@@ -17,13 +17,18 @@ Słownik ma trzy części: pojęcia opisujące wydarzenie i wolontariuszy, któr
 | Wydarzenie | Wydarzenie, zwana także konwentem, to impreza organizowana przez organizacje. Wydarzenie posiada wolontariuszy oraz pion organizacji. Wydarzenie odbywa się w konkretnych datach i lokalizacji. Dzieli się na fazę przed konwentem - planowanie, faze w trakcie wydarzenia, oraz fazę po konwencie - zbieranie wniosków i przygotowanie do nowego cyklu |
 | Wolontariusz | Osoba pomagająca przy organizacji oraz przebiegu wydarzenia, posiadająca podpisaną umowę o wolontariat, przydzielone benefity, zmiany oraz inne elementy potrzebne do przeprowadzenia wydarzenia |
 | Stały członek organizacji | Wolontariusz związany z organizacją na stałe, a nie tylko z jednym wydarzeniem. |
-| Organizator | Osoba odpowiedzialna za wydarzenie. Zarządza wolontariuszami; każdy dział podlega jednemu organizatorowi. |
+| Organizator | Osoba odpowiedzialna za wydarzenie. Zarządza wolontariuszami i działami, w których jest członkiem. Wydarzenie może mieć wielu organizatorów. |
 | Administrator | Osoba zarządzająca systemem: ustawia wydarzenia, role i uprawnienia, wyłącza i włącza konta, zmienia adres e-mail konta. |
-| Koordynator | Osoba zajmująca się działem. Każdy dział powinien mieć jednego koordynatora. |
-| Lider | Szef zespołu. Współpracuje z koordynatorem i organizatorem. |
-| Dział, sekcja | Najwyższa jednostka podziału wolontariuszy na wydarzeniu - dział zajmuje się konkretnym dużym wycinkiem wydarzenia. Każdy dział powinien posiadać jednego koordynatora zajmującego się działem. Każdy dział powinien podlegać pod jednego organizatora. |
-| Zespół | Grupa wolontariuszy pracująca w danym dziale nad mniejszym wycinkiem wydarzenia. Szefem zespołu powinien być jeden lider, który współpracuje z koordynatorem oraz organizatorem w celu organizacji wycinka. |
+| Koordynator | Osoba zajmująca się działem. Dział może mieć wielu koordynatorów. |
+| Lider | Szef zespołu. Współpracuje z koordynatorem i organizatorem. Zespół może mieć wielu liderów. |
+| Dział, sekcja | Najwyższa jednostka podziału wolontariuszy na wydarzeniu - dział zajmuje się konkretnym dużym wycinkiem wydarzenia. Działem zajmują się koordynatorzy, a odpowiadają za niego organizatorzy. |
+| Zespół | Grupa wolontariuszy pracująca w danym dziale nad mniejszym wycinkiem wydarzenia. Szefem zespołu jest lider, który współpracuje z koordynatorem oraz organizatorem w celu organizacji wycinka; zespół może mieć wielu liderów. |
 | Członkostwo w dziale | Wolontariusz przypisany do działu jest "członkiem działu". Jeden dział posiada wielu wolontariuszy współpracujących razem. |
+| Członkostwo w zespole | Przypisanie członka działu do zespołu tego działu. Osoba może należeć do kilku zespołów albo do żadnego; nie można należeć do zespołu bez członkostwa w jego dziale. |
+| Oznaczenie w dziale | Informacja, czym osoba zajmuje się w dziale lub zespole: organizator, koordynator, lider albo członek. Samo oznaczenie nie daje uprawnień – te daje rola. |
+| Osoba kontaktowa | Organizator, koordynator albo członek działu, którego dane kontaktowe widać w formularzu aplikacji. Członek jest osobą kontaktową tylko wtedy, gdy udostępnił swoje dane. |
+| Usunięcie z działu | Zakończenie członkostwa osoby w dziale i we wszystkich jego zespołach. Wymaga podania powodu. Nie kończy uczestnictwa w wydarzeniu. |
+| Usunięcie z wydarzenia | Zakończenie uczestnictwa osoby w wydarzeniu i wszystkich jej członkostw w działach tego wydarzenia. Nie wyłącza konta. |
 | Dział główny | Dział, który osoba ustawia na pierwszym miejscu, gdy aplikuje do więcej niż jednego działu. Ma pierwszeństwo w decyzji: aplikacje do pozostałych działów wymagają także jego zgody. Gdy dział główny odrzuci aplikację albo osoba ją wycofa, działem głównym staje się następny dział w kolejności. |
 | Aplikacja Wolontariacka | Zgłoszenie osoby, która chce zostać wolontariuszem w dziale lub zespole. Wymaga akceptacji. Zgłoszenie posiada różne elementy, zależne od działu, do którego aplikuje wolontariusz |
 | Stan aplikacji | Etap, na którym jest aplikacja wolontariacka: oczekująca, wycofana, zaakceptowana albo odrzucona. Rozpatrujący widzi dodatkowo stan „Czeka na dział główny”. |
