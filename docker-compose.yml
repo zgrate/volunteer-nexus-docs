@@ -1,0 +1,7 @@
+services:
+  docs:
+    build: .
+    ports:
+      # 3200, żeby nie kolidować z podglądem na żywo (npm start, port 3100)
+      - "${DOCS_PORT:-3200}:80"
+    restart: unless-stopped

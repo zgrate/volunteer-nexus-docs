@@ -1,0 +1,10 @@
+{
+  "version": "0.2",
+  "language": "pl,en",
+  "ignorePaths": ["node_modules", "build", ".docusaurus", "package*.json"],
+  "words": [
+    "Docusaurus", "Nexus", "Foxcons", "Conops", "Celery", "Django", "Pinia", "Vite",
+    "backtickach", "frontmatter", "endpoint", "endpointy", "serializer", "commit",
+    "benefit", "benefitów", "benefity", "niedyspozycyjność", "routing", "build"
+  ]
+}
