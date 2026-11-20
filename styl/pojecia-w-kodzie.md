@@ -24,6 +24,11 @@ Kolumna „Nie używamy” przeniesiona ze słownika.
 | członkostwo w dziale | `DepartmentMembership` |
 | grupa dostępu | `AccessGroup` |
 | aplikacja (do działu) | `VolunteerApplication` |
+| stan aplikacji | `VolunteerApplication.status` (`pending`, `accepted`, `rejected`); stanów „wycofana” i „czeka na dział główny” w v1 nie ma |
+| notatka wewnętrzna | `VolunteerApplication.review_note`; w v1 to jedyne pole, powodu odrzucenia nie ma |
+| rozpatrujący | w v1 administrator wydarzenia (`user_can_administer`) |
+| konto | `User` |
+| konto nieaktywne | `User.is_active = False` |
 | Centrum informacji | `InformationHubPage` |
 | zmiana | `Shift` |
 | stanowisko | `ShiftPosition` |

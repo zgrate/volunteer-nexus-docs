@@ -10,7 +10,7 @@ Moduł zmian służy do planowania pracy wolontariuszy na wydarzeniu: kto, kiedy
 ## Założenia modułu zmian
 
 - Zmiana składa się ze stanowisk, a wolontariusza przydziela się do stanowiska, nie do zmiany wprost.
-- Wolontariusz może zgłosić niedyspozycyjność na wydarzeniu. Niedyspozycyjność pełna blokuje przydział w tym czasie, warunkowa tylko ostrzega planującego. Zgłoszenie działa od razu; organizator może je odrzucić, podając powód.
+- Wolontariusz może zgłosić niedyspozycyjność na wydarzeniu. Niedyspozycyjność pełna blokuje przydział w tym czasie, warunkowa tylko ostrzega planującego. Zgłaszanie opisuje strona [Niedyspozycyjność, przyjazd i wyjazd](../wolontariusz/niedyspozycyjnosc-przyjazd-wyjazd.md).
 - Przed każdym przydziałem system sprawdza, czy wolontariusz może objąć stanowisko. Sprawdzenie ma dwie warstwy:
   - reguły ustawiane przez organizatorów: rejestracja na wydarzenie, wartość pola w profilu, przynależność do działu lub zespołu,
   - sprawdzenia stałe: wolne miejsca, przynależność do działu i zespołu stanowiska, kolizja z inną zmianą, kolizja z prowadzonym punktem programu, niedyspozycyjność.

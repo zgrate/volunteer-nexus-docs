@@ -18,12 +18,19 @@ Słownik ma trzy części: pojęcia opisujące wydarzenie i wolontariuszy, któr
 | Wolontariusz | Osoba pomagająca przy organizacji oraz przebiegu wydarzenia, posiadająca podpisaną umowę o wolontariat, przydzielone benefity, zmiany oraz inne elementy potrzebne do przeprowadzenia wydarzenia |
 | Stały członek organizacji | Wolontariusz związany z organizacją na stałe, a nie tylko z jednym wydarzeniem. |
 | Organizator | Osoba odpowiedzialna za wydarzenie. Zarządza wolontariuszami; każdy dział podlega jednemu organizatorowi. |
+| Administrator | Osoba zarządzająca systemem: ustawia wydarzenia, role i uprawnienia, wyłącza i włącza konta, zmienia adres e-mail konta. |
 | Koordynator | Osoba zajmująca się działem. Każdy dział powinien mieć jednego koordynatora. |
 | Lider | Szef zespołu. Współpracuje z koordynatorem i organizatorem. |
 | Dział, sekcja | Najwyższa jednostka podziału wolontariuszy na wydarzeniu - dział zajmuje się konkretnym dużym wycinkiem wydarzenia. Każdy dział powinien posiadać jednego koordynatora zajmującego się działem. Każdy dział powinien podlegać pod jednego organizatora. |
 | Zespół | Grupa wolontariuszy pracująca w danym dziale nad mniejszym wycinkiem wydarzenia. Szefem zespołu powinien być jeden lider, który współpracuje z koordynatorem oraz organizatorem w celu organizacji wycinka. |
 | Członkostwo w dziale | Wolontariusz przypisany do działu jest "członkiem działu". Jeden dział posiada wielu wolontariuszy współpracujących razem. |
+| Dział główny | Dział, który osoba ustawia na pierwszym miejscu, gdy aplikuje do więcej niż jednego działu. Ma pierwszeństwo w decyzji: aplikacje do pozostałych działów wymagają także jego zgody. Gdy dział główny odrzuci aplikację albo osoba ją wycofa, działem głównym staje się następny dział w kolejności. |
 | Aplikacja Wolontariacka | Zgłoszenie osoby, która chce zostać wolontariuszem w dziale lub zespole. Wymaga akceptacji. Zgłoszenie posiada różne elementy, zależne od działu, do którego aplikuje wolontariusz |
+| Stan aplikacji | Etap, na którym jest aplikacja wolontariacka: oczekująca, wycofana, zaakceptowana albo odrzucona. Rozpatrujący widzi dodatkowo stan „Czeka na dział główny”. |
+| Rozpatrujący | Osoba, której rola pozwala podjąć decyzję o aplikacji wolontariackiej: zaakceptować ją albo odrzucić. |
+| Powód odrzucenia | Uzasadnienie, które rozpatrujący musi podać przy odrzuceniu aplikacji wolontariackiej. Osoba aplikująca je widzi. |
+| Notatka wewnętrzna | Uwaga do aplikacji wolontariackiej widoczna tylko dla osób, które mogą przeglądać aplikacje. Osoba aplikująca jej nie widzi. |
+| Lista osób z zakazem wolontariatu | Lista osób, których nie należy przyjmować na wolontariuszy. Aplikacja takiej osoby pokazuje ostrzeżenie, a przyjęcie wymaga osobnego potwierdzenia. |
 | Uczestnictwo | Uczestnictwo w wydarzeniu - Gdy wolontariusz uczestniczy w wydarzeniu oznacza, że pomaga w wydarzeniu |
 | Historia uczestnictwa | Informacja o tym, w których wydarzeniach i w jakiej roli wolontariusz brał udział. Pozwala rozpoznać osoby powracające co roku. |
 | Zmiana | Odcinek pracy wolontariuszy na wydarzeniu: ma początek, czas trwania i może mieć lokalizację. Składa się ze stanowisk. Jest otwarta albo zamknięta. |
@@ -39,13 +46,16 @@ Słownik ma trzy części: pojęcia opisujące wydarzenie i wolontariuszy, któr
 | Przyjazd i wyjazd | |
 | Godziny zaplanowane | Suma czasu trwania zmian, do których wolontariusz jest przydzielony. System porównuje je z godzinami zadeklarowanymi i ostrzega przy przekroczeniu. |
 | Przepracowane godziny | |
-| Zadeklarowane godziny | |
+| Zadeklarowane godziny | Godziny, które osoba deklaruje w aplikacji wolontariackiej osobno dla każdego działu, w podziale na czas przed wydarzeniem, w jego trakcie i po nim. Po akceptacji aplikacji zmienia je tylko organizator. |
 | Dyspozytor | |
 | Zgłoszenie | |
 | Umowa | Umowa wolontariacka (umowa o wolontariat) podpisywana przez wolontariusza. Istotne jest, kto ją podpisał, czy została zweryfikowana i kiedy wygasa. |
+| Umowa na czas nieokreślony | Umowa bez daty wygaśnięcia. Dopóki jest ważna, system nie wyłącza osoby w wydarzeniu. |
 | Zgoda RODO | |
+| Zgoda na dłuższe przetwarzanie danych | Zgoda osoby na to, żeby system przechowywał jej dane także wtedy, gdy nie jest w żadnym wydarzeniu. Chroni konto przed wyłączeniem przez system. |
+| Anonimizacja | Usunięcie z systemu danych, które pozwalają rozpoznać osobę. Wyłącza konto osoby i usuwa jej aplikacje. |
 | Benefit | Korzyść przysługująca wolontariuszowi. To, które benefity przysługują, zależy od warunków, np. liczby wydarzeń lub przepracowanych godzin. |
-| Poziom benefitów | |
+| Poziom benefitów | Jeden z poziomów zdefiniowanych z góry dla wydarzenia. Osoba wybiera go w aplikacji wolontariackiej, gdy wydarzenie korzysta z poziomów zamiast z karty godzin; wybrany poziom jest przypisany do konkretnej aplikacji. |
 | Dostęp | Uprawnienie wolontariusza do systemu, konta lub kanału komunikacji. Organizatorzy muszą wiedzieć, kto je ma i komu należy je odebrać. |
 
 ## Pojęcia systemowe
@@ -54,10 +64,21 @@ Słownik ma trzy części: pojęcia opisujące wydarzenie i wolontariuszy, któr
 | --- | --- |
 | Volunteer Nexus | Nazwa systemu. Jeden system, w którym wolontariusz sam sprawdza swoje sprawy, a organizatorzy zarządzają wszystkimi wolontariuszami na wydarzeniu i w organizacji. |
 | MVP | Wersja systemu, której celem jest doprowadzenie obecnego systemu do stanu stabilnego. |
+| Konto | Zapis osoby w systemie, jeden dla wszystkich wydarzeń, rozpoznawany po adresie e-mail. Konto pozwala się zalogować; dostęp do spraw wydarzenia daje dopiero uczestnictwo. |
+| Konto nieaktywne | Konto, które nie pozwala korzystać z systemu. Wyłącza je administrator albo system. |
+| Wyłączenie w wydarzeniu | Stan, w którym osoba traci dostęp do spraw jednego wydarzenia, ale nadal może się zalogować i korzystać z innych wydarzeń. |
+| Kod logowania | Jednorazowy kod wysyłany na adres e-mail osoby, którym loguje się ona zamiast hasłem. Jest ważny 15 minut. |
+| Sesja | Zalogowanie osoby na jednym urządzeniu. Odnawia się, gdy osoba korzysta z systemu, i wygasa po 30 dniach bez użycia. |
+| Profil | Dane osoby w systemie: dane podstawowe, wspólne dla konta, oraz odpowiedzi na pola niestandardowe, osobne dla każdego wydarzenia. |
+| Nickname | Nazwa, pod którą osoba jest znana na wydarzeniu. Osoba podaje ją obok imienia i nazwiska. |
+| Rola | Zestaw uprawnień nadawany osobie. |
+| Uprawnienie | Pozwolenie na konkretną czynność w systemie, np. przeglądanie aplikacji albo decyzję w dziale. Nie mylić z dostępem. |
+| Kanał powiadomień | Droga, którą system wysyła osobie wiadomość, np. e-mail, Telegram albo powiadomienie na urządzenie. Osoba wybiera kanał dla swoich powiadomień. |
 | Panel administracyjny | Nie mylić z Django Admin. |
 | Centrum informacji | Miejsce w systemie z dokumentacją i informacjami ważnymi dla wolontariuszy. Wyświetlana publicznie dla wszystkich wolontariuszy, albo ograniczona do konkretnych działów |
 | Grupa dostępu | Zestaw działów, zespołów i wolontariuszy, którzy mogą wchodzić do tych samych stref wydarzenia. Odpowiada karcie dostępu w Foxcons. |
-| Pole niestandardowe | |
+| Pole niestandardowe | Pytanie zdefiniowane dla wydarzenia, na które osoba odpowiada w aplikacji wolontariackiej i w profilu. Może dotyczyć całego wydarzenia, wybranych działów albo wybranych zespołów. |
+| Pole wrażliwe | Pole niestandardowe, którego odpowiedzi widzi tylko osoba z uprawnieniami do przeglądania aplikacji i do wglądu w dane wrażliwe. |
 | Notatka | |
 | Karta Godzin | |
 | Tryb planowania | Sposób planowania zmian ustawiany dla działu: tryb standardowy albo siatka godzin. |

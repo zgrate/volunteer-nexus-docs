@@ -16,7 +16,7 @@ Rejestracja i logowanie odpowiadają za to, żeby każda osoba miała w systemie
 - Strona logowania nie zdradza, czy podany adres e-mail ma konto.
 - Osoba wybiera język przy rejestracji i może go zmienić w każdej chwili. System pokazuje interfejs i wysyła wiadomości w tym języku.
 - Osoba widzi, na jakich urządzeniach jest zalogowana, i może wylogować pozostałe urządzenia.
-- Administrator ustala dla wydarzenia termin, po którym system wyłącza osobę w tym wydarzeniu. Całe konto wyłącza się, gdy osoba nie jest w żadnym wydarzeniu albo została wyłączona we wszystkich. Ważna umowa na czas nieokreślony chroni przed wyłączeniem w wydarzeniu, a zgoda na dłuższe przetwarzanie danych przed wyłączeniem całego konta.
+- System sam wyłącza osobę w wydarzeniu po terminie ustalonym przez administratora, a całe konto wtedy, gdy osoba nie jest już w żadnym wydarzeniu.
 - Konto to nie to samo co uczestnictwo. Konto pozwala się zalogować; uczestnictwo w wydarzeniu daje dostęp do spraw tego wydarzenia.
 - Logowanie wygląda tak samo dla wolontariusza, organizatora i administratora. To, co osoba widzi po zalogowaniu, wynika z jej uprawnień, a nie ze sposobu logowania.
 - Przed pierwszym użyciem systemu osoba musi uzupełnić podstawowe dane profilu i wyrazić zgodę RODO.
@@ -36,7 +36,7 @@ Wydarzenie decyduje o tym, kto może do niego dołączyć:
 
 Osoba zalogowana, która nie ma uczestnictwa w wybranym wydarzeniu, widzi swój profil, informację, że nie jest zapisana na wydarzenie, oraz swoje aplikacje i ich stan. Nie widzi zmian, benefitów, karty godzin ani centrum informacji tego wydarzenia.
 
-Uczestnictwo powstaje na dwa sposoby: gdy organizator zaakceptuje aplikację wolontariacką albo gdy organizator lub administrator doda osobę do wydarzenia. Organizator może też usunąć osobę z wydarzenia. Kończy to jej uczestnictwo, ale nie wyłącza konta.
+Uczestnictwo powstaje na dwa sposoby: gdy aplikacja wolontariacka zostanie zaakceptowana albo gdy organizator lub administrator doda osobę do wydarzenia. Organizator może też usunąć osobę z wydarzenia. Kończy to jej uczestnictwo, ale nie wyłącza konta.
 
 ## Rejestracja – jak powstaje konto
 
@@ -131,23 +131,12 @@ flowchart TD
 
 ## Konto nieaktywne
 
-Wyłączenie działa na dwóch poziomach: w jednym wydarzeniu i dla całego konta.
+Wyłączenie działa na dwóch poziomach:
 
-### Wyłączenie w wydarzeniu
+- osoba wyłączona w wydarzeniu traci dostęp do jego spraw, ale nadal może się zalogować i korzystać z innych wydarzeń,
+- konto nieaktywne nie pozwala korzystać z systemu.
 
-Administrator ustala dla wydarzenia termin wyłączenia. Gdy termin minie, system wyłącza osobę w tym wydarzeniu: osoba traci dostęp do jego spraw, ale nadal może się zalogować i korzystać z innych wydarzeń. System nie wyłącza w wydarzeniu osoby, która ma ważną umowę na czas nieokreślony.
-
-### Wyłączenie całego konta
-
-Konto nieaktywne nie pozwala korzystać z systemu. Konto staje się nieaktywne w trzech przypadkach:
-
-- administrator je wyłączy,
-- dane osoby zostaną zanonimizowane (zob. [Anonimizacja i usuwanie danych](../rodo/anonimizacja-i-usuwanie.md)),
-- osoba nie jest w żadnym wydarzeniu albo została wyłączona we wszystkich swoich wydarzeniach – wtedy konto wyłącza system.
-
-Osoba jest w wydarzeniu, gdy ma w nim uczestnictwo albo aplikację oczekującą na rozpatrzenie. System nie wyłącza konta osoby, która zgodziła się na dłuższe przetwarzanie danych.
-
-Konto wyłącza tylko administrator albo system. Organizator nie wyłącza kont – może usunąć osobę z wydarzenia.
+Konto wyłącza tylko administrator albo system. Kiedy system wyłącza osobę lub konto i co przed tym chroni, opisuje strona [Anonimizacja i usuwanie danych](../rodo/anonimizacja-i-usuwanie.md).
 
 ### Powrót do systemu
 
