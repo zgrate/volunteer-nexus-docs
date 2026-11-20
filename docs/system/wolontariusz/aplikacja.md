@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: Aplikacja na wolontariusza
+title: Aplikacja wolontariacka
 ---
 
-# Aplikacja na wolontariusza
+# Aplikacja wolontariacka

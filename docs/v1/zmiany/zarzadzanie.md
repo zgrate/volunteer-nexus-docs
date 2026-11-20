@@ -9,7 +9,7 @@ title: Zarządzanie zmianami
 Strona powstała z przeglądu kodu modułu (`backend/shifts/`) i z zakładek ekranu „Zmiany” w panelu administracyjnym. Czeka na sprawdzenie oraz uzupełnienie.
 :::
 
-Zmianami zarządza się w panelu administracyjnym, w zakładce „Zmiany”. Strona opisuje, kto może zarządzać zmianami, z czego składa się ekran i jakie czynności są dostępne. Pojęcia objaśnia [słownik](../slownik.md).
+Zmianami zarządza się w panelu administracyjnym, w zakładce „Zmiany”. Strona opisuje, kto może zarządzać zmianami, z czego składa się ekran i jakie czynności są dostępne. Pojęcia objaśnia [słownik](../../system/slownik.md).
 
 ## Kto zarządza zmianami
 
@@ -71,7 +71,7 @@ Zmianami utworzonymi z siatki godzin zarządza wyłącznie siatka; takiej zmiany
 
 ## Siatka godzin
 
-Ustawienia siatki – kategorie służby, wymagania obsady i adnotacje – oraz sam ekran opisuje strona [Definicje i podstawowe typy zmian](definicje.md).
+Ustawienia siatki – kategorie służby, wymagania obsady i adnotacje – opisuje strona [Definicje i podstawowe typy zmian](../../system/zmiany/definicje.md), a sam ekran – strona [Ekrany zmian](ekrany.md).
 
 ## Ekran Conops
 

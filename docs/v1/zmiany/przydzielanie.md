@@ -9,7 +9,7 @@ title: Przydzielanie wolontariuszy do zmian
 Strona powstała z przeglądu kodu modułu (`backend/shifts/`) i czeka na sprawdzenie oraz uzupełnienie. Nie opisuje jeszcze ekranów.
 :::
 
-Przydział to przypisanie wolontariusza do stanowiska na zmianie. Strona opisuje, jak przydział powstaje, co system sprawdza i co dzieje się z przydziałem później. Pojęcia objaśnia [słownik](../slownik.md).
+Przydział to przypisanie wolontariusza do stanowiska na zmianie. Strona opisuje, jak przydział powstaje, co system sprawdza i co dzieje się z przydziałem później. Pojęcia objaśnia [słownik](../../system/slownik.md).
 
 ## Sposoby przydzielania
 

@@ -90,7 +90,7 @@ Pojęcia używane w dokumentacji technicznej.
 
 | Pojęcie | Definicja |
 | --- | --- |
-| v1 | Wersja systemu rozwijana od kwietnia do listopada 2026 r. Dokumentacja techniczna v1 opisuje stan systemu z listopada 2026 r. |
+| v1 | Wersja systemu rozwijana od kwietnia do listopada 2026 r. Dział „v1” opisuje stan systemu z listopada 2026 r. |
 | Interfejs | Część systemu działająca w przeglądarce użytkownika. Jedna aplikacja wspólna dla wolontariuszy, organizatorów i administratorów. |
 | Serwer | Część systemu, która przechowuje dane i udostępnia je interfejsowi przez API. |
 | API | Zestaw adresów pod ścieżką `/api/`, przez które interfejs, urządzenia i integracje komunikują się z serwerem. |

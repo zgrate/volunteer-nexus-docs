@@ -27,7 +27,9 @@ npm run build
 
 ## Co gdzie jest
 
-- `docs/` – strony dokumentacji,
+- `docs/system/` – jak system ma działać: założenia, pojęcia i opis funkcji,
+- `docs/v1/` – co istnieje w wersji 1: dokumentacja techniczna i moduły,
+- `docs/v2/` – nowa wersja systemu,
 - `styl/` – przewodnik stylu, źródła stylu, przykłady i notatki do słownika,
 - `szablony.md` – szkielety stron,
 - `CLAUDE.md` – zasady dla AI przy pisaniu dokumentacji,

@@ -21,12 +21,17 @@ Wpisy z „(do potwierdzenia)” stosuj, ale przy pierwszym użyciu zapytaj uży
 
 ## Zasady
 
+- Dokumentacja ma trzy działy i każdy ma inne źródło prawdy:
+  - `docs/system/` — jak system **ma** działać: założenia, pojęcia, opis każdej funkcji. Źródłem prawdy jest użytkownik, nie kod. Nie wpisuj tu nazw z kodu, ścieżek plików ani opisu ekranów v1. Gdy kod v1 robi coś inaczej, niż mówi strona, nie poprawiaj strony pod kod — zapytaj.
+  - `docs/v1/` — co istnieje w wersji 1 i jak działa: dokumentacja techniczna i moduły. Źródłem prawdy jest kod; każde stwierdzenie sprawdź w kodzie i podaj ścieżkę pliku względem katalogu głównego repozytorium.
+  - `docs/v2/` — nowa wersja, budowana na założeniach z `docs/system/` i wiedzy z `docs/v1/`. Źródłem prawdy są decyzje użytkownika.
 - Pisz po polsku. Nazwy z kodu zostają w oryginale, w `backtickach`. Pojęcia domenowe tylko według słownika; brakuje pojęcia — zapytaj i dopisz.
-- Źródłem prawdy jest kod. Każde stwierdzenie techniczne sprawdź w kodzie i podaj ścieżkę pliku względem katalogu głównego repozytorium.
 - `README.md`, `agent-instructions.md`, `instruction.md` i `docs/*.md` w katalogu głównym to wskazówki, nie źródło — bywają nieaktualne. Nie przepisuj z nich bez weryfikacji w kodzie.
 - Nie wiesz albo kod jest niejednoznaczny — zapytaj lub zostaw `TODO(pytanie): …`. Nie zmyślaj.
 - Jedna strona = jeden temat. Diagramy w Mermaid.
-- Pliki stron: `docs/<dział>/<nazwa-bez-polskich-znakow>.md`. Nowy dział = nowy folder z `_category_.json`.
+- Pliki stron: `docs/<dział>/<folder>/<nazwa-bez-polskich-znakow>.md`. Nowy folder dostaje `_category_.json`; gdy ta sama nazwa folderu występuje w dwóch działach, drugi dostaje w tym pliku własny `key`.
+- Foldery działu „System” mają dwa rodzaje. Folder modułu (Zmiany, Benefity, Dokumenty, Powiadomienia, Na wydarzeniu, RODO) opisuje, jak obszar ma działać: pojęcia, zasady, warunki. Folder roli (Wolontariusz, Organizator, Administrator) opisuje, co ta osoba robi. Zasady pisz raz, w folderze modułu; strona w folderze roli odsyła do nich odnośnikiem zamiast je powtarzać.
+- Sprawy techniczne v1 (budowa, wdrożenie, uruchomienie) idą do `docs/v1/dokumentacja-techniczna/`, a opis działania modułów v1 i ich ekranów do `docs/v1/<moduł>/`.
 
 ## Gdzie szukać
 
