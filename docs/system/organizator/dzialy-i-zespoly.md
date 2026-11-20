@@ -5,10 +5,6 @@ title: Działy i zespoły
 
 # Działy i zespoły
 
-:::warning[Szkic]
-Szkic napisany na podstawie działania wersji 1 i decyzji podjętych przy stronach „Aplikacja wolontariacka” i „Rozpatrywanie aplikacji”. Opisuje, jak działy i zespoły mają działać.
-:::
-
 Działy i zespoły to podział wolontariuszy na wydarzeniu: dział zajmuje się dużym wycinkiem wydarzenia, a zespół mniejszym wycinkiem w ramach działu. Ta strona opisuje, co ustawia się w dziale i w zespole, jakie role mają w nich osoby, jak powstaje członkostwo i jak usuwa się osobę z działu.
 
 ## Założenia

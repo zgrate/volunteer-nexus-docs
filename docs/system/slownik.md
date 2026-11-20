@@ -16,7 +16,7 @@ Słownik ma trzy części: pojęcia opisujące wydarzenie i wolontariuszy, któr
 | Organizacja | Podmiot organizujący wydarzenia. Ma stałych członków, niezależnie od pojedynczych wydarzeń. |
 | Wydarzenie | Wydarzenie, zwana także konwentem, to impreza organizowana przez organizacje. Wydarzenie posiada wolontariuszy oraz pion organizacji. Wydarzenie odbywa się w konkretnych datach i lokalizacji. Dzieli się na fazę przed konwentem - planowanie, faze w trakcie wydarzenia, oraz fazę po konwencie - zbieranie wniosków i przygotowanie do nowego cyklu |
 | Wolontariusz | Osoba pomagająca przy organizacji oraz przebiegu wydarzenia, posiadająca podpisaną umowę o wolontariat, przydzielone benefity, zmiany oraz inne elementy potrzebne do przeprowadzenia wydarzenia |
-| Stały członek organizacji | Wolontariusz związany z organizacją na stałe, a nie tylko z jednym wydarzeniem. |
+| Stały członek organizacji | Wolontariusz związany z organizacją na stałe, a nie tylko z jednym wydarzeniem. Osoba oznacza się tak sama; osoba, której rola na to pozwala, może to oznaczenie nadpisać. |
 | Organizator | Osoba odpowiedzialna za wydarzenie. Zarządza wolontariuszami i działami, w których jest członkiem. Wydarzenie może mieć wielu organizatorów. |
 | Administrator | Osoba zarządzająca systemem: ustawia wydarzenia, role i uprawnienia, wyłącza i włącza konta, zmienia adres e-mail konta. |
 | Koordynator | Osoba zajmująca się działem. Dział może mieć wielu koordynatorów. |
@@ -26,7 +26,7 @@ Słownik ma trzy części: pojęcia opisujące wydarzenie i wolontariuszy, któr
 | Członkostwo w dziale | Wolontariusz przypisany do działu jest "członkiem działu". Jeden dział posiada wielu wolontariuszy współpracujących razem. |
 | Członkostwo w zespole | Przypisanie członka działu do zespołu tego działu. Osoba może należeć do kilku zespołów albo do żadnego; nie można należeć do zespołu bez członkostwa w jego dziale. |
 | Oznaczenie w dziale | Informacja, czym osoba zajmuje się w dziale lub zespole: organizator, koordynator, lider albo członek. Samo oznaczenie nie daje uprawnień – te daje rola. |
-| Osoba kontaktowa | Organizator, koordynator albo członek działu, którego dane kontaktowe widać w formularzu aplikacji. Członek jest osobą kontaktową tylko wtedy, gdy udostępnił swoje dane. |
+| Osoba kontaktowa | Organizator albo koordynator działu, który udostępnił swoje dane kontaktowe. Widać go w formularzu aplikacji, żeby osoba mogła skontaktować się z działem przed aplikacją. |
 | Usunięcie z działu | Zakończenie członkostwa osoby w dziale i we wszystkich jego zespołach. Wymaga podania powodu. Nie kończy uczestnictwa w wydarzeniu. |
 | Usunięcie z wydarzenia | Zakończenie uczestnictwa osoby w wydarzeniu i wszystkich jej członkostw w działach tego wydarzenia. Nie wyłącza konta. |
 | Dział główny | Dział, który osoba ustawia na pierwszym miejscu, gdy aplikuje do więcej niż jednego działu. Ma pierwszeństwo w decyzji: aplikacje do pozostałych działów wymagają także jego zgody. Gdy dział główny odrzuci aplikację albo osoba ją wycofa, działem głównym staje się następny dział w kolejności. |
@@ -75,6 +75,13 @@ Słownik ma trzy części: pojęcia opisujące wydarzenie i wolontariuszy, któr
 | Kod logowania | Jednorazowy kod wysyłany na adres e-mail osoby, którym loguje się ona zamiast hasłem. Jest ważny 15 minut. |
 | Sesja | Zalogowanie osoby na jednym urządzeniu. Odnawia się, gdy osoba korzysta z systemu, i wygasa po 30 dniach bez użycia. |
 | Profil | Dane osoby w systemie: dane podstawowe, wspólne dla konta, oraz odpowiedzi na pola niestandardowe, osobne dla każdego wydarzenia. |
+| Dane podstawowe | Dane osoby wspólne dla konta: imię i nazwisko, nickname, adres e-mail, kontakt na Telegramie oraz pola systemowe. Osoba wpisuje je raz; później zmienia je organizator. |
+| Pole systemowe | Pole niestandardowe wspólne dla konta, a nie dla jednego wydarzenia, np. PESEL. Rozszerza dane podstawowe. |
+| Zdjęcie profilowe | Zdjęcie osoby widoczne dla zalogowanych wolontariuszy wydarzenia. |
+| Lista kontrolna | Lista kroków, które osoba musi wykonać przed wydarzeniem, z informacją, ile już wykonała. Wydarzenie wybiera, których kroków używa. |
+| Udostępnianie kontaktu | Ustawienie w profilu, którym osoba decyduje, czy inni wolontariusze wydarzenia widzą jej adres e-mail i kontakt na Telegramie. Domyślnie wyłączone. |
+| Ustawienia lokalizacyjne | Sposób zapisu danych zależnych od kraju, np. format daty. Osoba ustawia je w profilu obok języka. |
+| Identyfikator Foxcons | Numer, który łączy osobę z jej rejestracją w Foxcons. Jest przypisany do wydarzenia. |
 | Nickname | Nazwa, pod którą osoba jest znana na wydarzeniu. Osoba podaje ją obok imienia i nazwiska. |
 | Rola | Zestaw uprawnień nadawany osobie. |
 | Uprawnienie | Pozwolenie na konkretną czynność w systemie, np. przeglądanie aplikacji albo decyzję w dziale. Nie mylić z dostępem. |
@@ -82,7 +89,7 @@ Słownik ma trzy części: pojęcia opisujące wydarzenie i wolontariuszy, któr
 | Panel administracyjny | Nie mylić z Django Admin. |
 | Centrum informacji | Miejsce w systemie z dokumentacją i informacjami ważnymi dla wolontariuszy. Wyświetlana publicznie dla wszystkich wolontariuszy, albo ograniczona do konkretnych działów |
 | Grupa dostępu | Zestaw działów, zespołów i wolontariuszy, którzy mogą wchodzić do tych samych stref wydarzenia. Odpowiada karcie dostępu w Foxcons. |
-| Pole niestandardowe | Pytanie zdefiniowane dla wydarzenia, na które osoba odpowiada w aplikacji wolontariackiej i w profilu. Może dotyczyć całego wydarzenia, wybranych działów albo wybranych zespołów. |
+| Pole niestandardowe | Pytanie, na które osoba odpowiada w aplikacji wolontariackiej i w profilu. Pole przypisane do wydarzenia może dotyczyć całego wydarzenia, wybranych działów albo wybranych zespołów; pole systemowe jest wspólne dla konta. |
 | Pole wrażliwe | Pole niestandardowe, którego odpowiedzi widzi tylko osoba z uprawnieniami do przeglądania aplikacji i do wglądu w dane wrażliwe. |
 | Notatka | |
 | Karta Godzin | |

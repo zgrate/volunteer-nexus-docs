@@ -31,4 +31,9 @@ Ze strony [Definicje i podstawowe typy zmian](../zmiany/definicje.md):
 
 - okno planowania zmian wydarzenia, w którym musi się mieścić każda zmiana.
 
+Ze strony [Profil wolontariusza](../wolontariusz/profil.md):
+
+- termin, do którego osoba zmienia odpowiedzi na pytania,
+- kroki listy kontrolnej, których wydarzenie używa; dostępne kroki zależą od modułów i wymagań wydarzenia.
+
 :::

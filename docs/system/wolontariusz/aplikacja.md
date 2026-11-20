@@ -38,7 +38,7 @@ O tym, do czego można aplikować, decydują ustawienia działów (zob. [Działy
 - dział może mieć własny termin aplikacji, wcześniejszy niż termin wydarzenia; po nim formularz pokazuje dział jako zamknięty,
 - dział może być wyłączony z aplikacji – wtedy osoby dodaje do niego tylko organizator lub administrator, a formularz go nie pokazuje,
 - dział może pozwalać na wybór zespołów; zespół pojawia się w formularzu, gdy jest oznaczony jako dostępny do wyboru,
-- dział pokazuje w formularzu swój opis oraz osoby kontaktowe: organizatora, koordynatora i członków, którzy udostępnili swoje dane kontaktowe.
+- dział pokazuje w formularzu swój opis oraz osoby kontaktowe: organizatorów i koordynatorów, którzy udostępnili swoje dane kontaktowe.
 
 Osoba, która już uczestniczy w wydarzeniu, aplikuje do kolejnego działu tym samym formularzem.
 

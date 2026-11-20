@@ -9,7 +9,8 @@ title: Anonimizacja i usuwanie danych
 Zasady opisane dotąd na innych stronach:
 
 - anonimizacja danych osoby wyłącza jej konto (zob. [Rejestracja i logowanie](../wolontariusz/rejestracja-i-logowanie.md)),
-- przy anonimizacji system usuwa aplikacje osoby (zob. [Rozpatrywanie aplikacji](../organizator/rozpatrywanie-aplikacji.md)).
+- przy anonimizacji system usuwa aplikacje osoby (zob. [Rozpatrywanie aplikacji](../organizator/rozpatrywanie-aplikacji.md)),
+- pobranie danych osoby, wycofanie zgody i usunięcie danych wykonuje administrator na prośbę osoby; osoba nie robi tego sama w profilu (zob. [Profil wolontariusza](../wolontariusz/profil.md)).
 
 Wyłączanie osób i kont, przeniesione ze strony [Rejestracja i logowanie](../wolontariusz/rejestracja-i-logowanie.md):
 

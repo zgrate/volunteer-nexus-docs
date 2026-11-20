@@ -18,7 +18,8 @@ Ze strony [Działy i zespoły](dzialy-i-zespoly.md) – lista działów z człon
 - przy członku widać nickname, oznaczenie w dziale, zespoły z ich opisem i notatkę do członkostwa,
 - adres e-mail lub kontakt na Telegramie widać tylko wtedy, gdy ta osoba je udostępniła,
 - imię, nazwisko i adres e-mail każdego członka widzi tylko organizator działu i administrator,
-- przy swoich działach wolontariusz widzi stan swojej aplikacji.
+- przy swoich działach wolontariusz widzi stan swojej aplikacji,
+- zdjęcie profilowe członka widzą ci sami zalogowani wolontariusze wydarzenia, którzy widzą listę (zob. [Profil wolontariusza](../wolontariusz/profil.md)).
 
 Ze strony [Działy i zespoły](dzialy-i-zespoly.md) – usunięcie osoby z wydarzenia:
 
