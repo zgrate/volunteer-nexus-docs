@@ -28,3 +28,465 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Rysunki koncepcyjne w treści stron (np. przykładowa zmiana): ramka z nagłówkiem, wiersze i „miejsca”. */
+.koncept {
+  max-width: 640px;
+  margin: 1rem 0;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+.koncept__naglowek {
+  padding: 0.75rem 1rem;
+  background: var(--ifm-color-emphasis-100);
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+.koncept__meta {
+  color: var(--ifm-color-emphasis-700);
+}
+.koncept__znacznik {
+  float: right;
+  padding: 0 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  border: 1px solid var(--ifm-color-emphasis-400);
+}
+.koncept__znacznik--ok {
+  color: var(--ifm-color-primary-darkest);
+  border-color: var(--ifm-color-primary);
+}
+.koncept__stanowisko {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+.koncept__opis span {
+  display: block;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.8rem;
+}
+.koncept__miejsca {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.koncept__miejsce {
+  padding: 0.15rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-primary);
+  background: var(--ifm-color-primary-contrast-background, var(--ifm-color-emphasis-100));
+}
+.koncept__stanowisko--kolumna {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.koncept__znacznik--wtekscie {
+  float: none;
+  display: inline-block;
+}
+.koncept__znacznik--pelne {
+  color: var(--ifm-color-danger-darkest);
+  border-color: var(--ifm-color-danger);
+}
+.koncept__przycisk {
+  padding: 0.1rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-500);
+}
+.koncept__przycisk--nieaktywny {
+  color: var(--ifm-color-emphasis-500);
+  border-style: dashed;
+}
+
+/* Szkic tablicy zmian: pasek dni, filtry kolumn i siatka godzin × lokalizacji. */
+.tablica {
+  max-width: 760px;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+.tablica__pasek {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.tablica__dzien,
+.tablica__filtr {
+  padding: 0.1rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-400);
+}
+.tablica__dzien--wybrany {
+  background: var(--ifm-color-emphasis-200);
+  font-weight: 700;
+}
+.tablica__siatka {
+  display: grid;
+  grid-template-columns: 3.5rem repeat(3, 1fr);
+  grid-template-rows: auto repeat(14, 1.6rem);
+  column-gap: 0.4rem;
+  background-image: linear-gradient(var(--ifm-color-emphasis-200) 1px, transparent 1px);
+  background-size: 100% 3.2rem;
+  background-position: 0 1.9rem;
+}
+.tablica__kolumna {
+  grid-row: 1;
+  padding: 0.2rem;
+  text-align: center;
+  font-weight: 700;
+  background: var(--ifm-color-emphasis-200);
+  border-radius: 6px 6px 0 0;
+}
+.tablica__godzina {
+  grid-column: 1;
+  color: var(--ifm-color-emphasis-700);
+  font-family: var(--ifm-font-family-monospace);
+}
+.tablica__zmiana {
+  margin: 1px 0;
+  padding: 0.15rem 0.4rem;
+  border-radius: 6px;
+  overflow: hidden;
+  line-height: 1.25;
+  color: #fff;
+  background: var(--ifm-color-primary-dark);
+}
+.tablica__zmiana span,
+.tablica__zmiana em {
+  display: block;
+  font-style: normal;
+  font-size: 0.72rem;
+}
+
+.koncept__miejsce--wolne {
+  border: 1px dashed var(--ifm-color-emphasis-500);
+  background: transparent;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* Szkic siatki zmian: osoby × odcinki po 30 minut, komórki w kolorze kategorii, pod spodem obsada. */
+.siatka {
+  max-width: 760px;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+.siatka__pasek {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+.siatka__pedzel {
+  padding: 0.1rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-400);
+}
+.siatka__pedzel--wybrany {
+  outline: 2px solid var(--ifm-color-emphasis-900);
+  outline-offset: 1px;
+  font-weight: 700;
+}
+.siatka__przewijanie {
+  overflow-x: auto;
+}
+/* Nadpisuje domyślny wygląd tabel Docusaurusa (display: block, paski co drugi wiersz). */
+.siatka table {
+  display: table;
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.siatka tr,
+.siatka tr:nth-child(2n) {
+  background: transparent;
+  border: 0;
+}
+.siatka th,
+.siatka td {
+  padding: 0.25rem 0.1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  text-align: center;
+  background: transparent;
+  font-weight: 400;
+}
+.siatka th:first-child {
+  width: 6.5rem;
+  padding-left: 0.4rem;
+  text-align: left;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.siatka tr > :last-child {
+  width: 4.2rem;
+}
+.siatka thead th {
+  font-weight: 700;
+  background: var(--ifm-color-emphasis-100);
+}
+.siatka thead,
+.siatka thead tr {
+  background: transparent;
+  border: 0;
+}
+.siatka thead tr:first-child > * {
+  border: 0;
+  background: transparent;
+}
+.siatka thead tr:first-child > .siatka__pasmo {
+  border-radius: 6px;
+  background: #fde68a;
+  color: #1f2937;
+  font-size: 0.72rem;
+}
+.siatka tfoot tr:first-child > * {
+  border-top: 2px solid var(--ifm-color-emphasis-500);
+}
+.siatka tfoot td {
+  font-size: 0.72rem;
+  color: var(--ifm-color-emphasis-700);
+}
+/* Kolory kategorii są stałe w obu motywach, więc tekst w komórce też ma stały kolor. */
+.siatka .p,
+.siatka .s,
+.siatka .r,
+.siatka .x {
+  color: #1f2937;
+  font-weight: 700;
+}
+.siatka .p {
+  background: #bfdbfe;
+}
+.siatka .s {
+  background: #bbf7d0;
+}
+.siatka .r {
+  background: #fed7aa;
+}
+.siatka .x {
+  background: repeating-linear-gradient(45deg, #e5e7eb, #e5e7eb 4px, #cbd5e1 4px, #cbd5e1 8px);
+  font-weight: 400;
+}
+.siatka td.siatka__brak {
+  background: #fecaca;
+  color: #7f1d1d;
+  font-weight: 700;
+}
+
+/* Szkic prawdziwego ekranu systemu (ciemny wygląd Volunteer Nexus). Kolory są stałe w obu motywach
+   dokumentacji, bo odwzorowują interfejs systemu, a nie stronę dokumentacji. */
+.ekran {
+  max-width: 900px;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, #3a1f24, #5a3a3c);
+  color: #f4f4f5;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+.ekran__tytul {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.ekran__naglowek {
+  margin: 0.9rem 0 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.ekran__opis {
+  margin: 0.2rem 0 0.5rem;
+  color: rgba(244, 244, 245, 0.6);
+}
+.ekran__etykieta {
+  font-weight: 700;
+}
+.ekran__wybor {
+  margin: 0.3rem 0 0.6rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  background: #24131a;
+}
+.ekran__rzad {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  margin: 0.45rem 0;
+}
+.ekran__dzien {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 205, 205, 0.22);
+  background: rgba(0, 229, 255, 0.1);
+  color: #d4e4f7;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.68rem;
+}
+.ekran__dzien b {
+  font-size: 0.8rem;
+}
+.ekran__dzien--wybrany {
+  background: rgba(255, 255, 255, 0.88);
+  color: #5c1111;
+}
+.ekran__pedzel,
+.ekran__filtr {
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  font-family: var(--ifm-font-family-monospace);
+}
+.ekran__filtr {
+  padding: 0.1rem 0.55rem;
+  font-size: 0.72rem;
+}
+.ekran__pedzel--wybrany {
+  outline: 2px solid #3b82f6;
+  outline-offset: 1px;
+}
+.ekran__legenda {
+  display: inline-block;
+  margin: 0.15rem 0;
+  padding: 0.25rem 0.7rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+}
+.ekran__przycisk {
+  padding: 0.15rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 106, 209, 0.3);
+  background: rgba(0, 106, 209, 0.14);
+  font-family: var(--ifm-font-family-monospace);
+}
+.ekran__przycisk--glowny {
+  border-color: transparent;
+  background: #00e5ff;
+  color: #06323a;
+}
+/* Kwadrat koloru kategorii: w przyciskach, legendzie, wierszach obsady i tabeli ustawień. */
+.ekran i {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 0.4rem;
+  vertical-align: -0.1rem;
+}
+.ekran .p {
+  background: #93c5fd;
+}
+.ekran .s {
+  background: #86efac;
+}
+.ekran .r {
+  background: #fdba74;
+}
+.ekran .x {
+  background: repeating-linear-gradient(45deg, #d1d5db, #d1d5db 4px, #e5e7eb 4px, #e5e7eb 8px);
+}
+.ekran .w {
+  background: repeating-linear-gradient(45deg, #fcd34d, #fcd34d 4px, #fef3c7 4px, #fef3c7 8px);
+}
+.ekran .z {
+  background: repeating-linear-gradient(45deg, #f59e0b, #f59e0b 3px, #7c2d12 3px, #7c2d12 6px);
+}
+.ekran__przewijanie {
+  overflow-x: auto;
+}
+.ekran table {
+  display: table;
+  width: 100%;
+  margin: 0.4rem 0;
+  border-collapse: collapse;
+}
+.ekran thead,
+.ekran tr,
+.ekran tr:nth-child(2n) {
+  background: transparent;
+  border: 0;
+}
+.ekran th,
+.ekran td {
+  min-width: 2.6rem;
+  padding: 0.25rem 0.3rem;
+  border: 1px solid rgba(255, 205, 205, 0.22);
+  background: transparent;
+  color: #f4f4f5;
+  text-align: center;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.ekran thead th {
+  background: #032e52;
+  font-weight: 700;
+}
+.ekran tbody th,
+.ekran tfoot th {
+  background: #032e52;
+  text-align: right;
+}
+.ekran td.p,
+.ekran td.s,
+.ekran td.r {
+  color: #f4f4f5;
+}
+.ekran td.x {
+  color: #6b7280;
+}
+.ekran__pasmo {
+  display: block;
+  margin: -0.25rem -0.3rem;
+  padding: 0.15rem 0.25rem;
+  background: #fde68a;
+  color: #000;
+  font-size: 0.62rem;
+}
+.ekran__godziny {
+  margin-left: 0.2rem;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid #9ca3af;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ekran__godziny--ponad {
+  border-color: #d97706;
+  background: #fffbeb;
+  color: #d97706;
+}
+.ekran tfoot td {
+  font-weight: 600;
+}
+.ekran td.ekran__brak {
+  color: #f87171;
+}
+.ekran .ekran__lista th,
+.ekran .ekran__lista td {
+  min-width: 0;
+  text-align: left;
+  white-space: normal;
+  border-width: 0 0 1px;
+}

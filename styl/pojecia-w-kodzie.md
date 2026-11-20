@@ -31,7 +31,23 @@ Kolumna „Nie używamy” przeniesiona ze słownika.
 | lokalizacja | `ShiftLocation` |
 | szablon zmiany | `ShiftTemplate` |
 | reguła | `ShiftRule` |
-| siatka | `ShiftGrid*` |
+| siatka godzin | `Department.shift_planning_mode = "continuous"`, `backend/shifts/grid.py` |
+| tryb planowania | `Department.ShiftPlanningMode` (`standard`, `continuous`) |
+| odcinek | `GRID_SLOT_MINUTES = 30` |
+| kategoria służby | `ShiftGridCategory` |
+| blokada | `ShiftGridCategory.is_blackout` |
+| wymaganie obsady | `ShiftGridRequirement`, `ShiftGridRequirementCategory` |
+| adnotacja | `ScheduleAnnotation` |
+| przydział | `ShiftAssignment` |
+| zastępstwo | `ShiftAssignment.replaces` |
+| obecność | `ShiftAssignment.attendance_status` |
+| szablon reguł | `ShiftRuleTemplate`, `ShiftRuleGroup` |
+| sprawdzenie stałe | `ASSIGNMENT_RULE_ORDER` w `backend/shifts/rule_engine.py` |
+| pominięcie warunku | `ShiftAssignment.overridden`, `rule_overrides` |
+| samodzielny zapis | `ShiftPosition.self_assign_enabled` |
+| operator zmian | `Department.shift_operators` |
+| godziny zaplanowane | `backend/shifts/hours.py` |
+| okno planowania zmian | `Event.shift_window()` |
 | ekran Conops | `ConopsScreen` |
 | niedyspozycyjność | `UserUnavailability` |
 | przyjazd i wyjazd | `VolunteerArrivalDeparture` |
@@ -52,5 +68,17 @@ Kolumna „Nie używamy” przeniesiona ze słownika.
 | klucz API | `UserApiKey` |
 | dziennik audytu | `AuditLog` |
 | panel administracyjny | frontend, `/admin` |
-| harmonogram Foxcons | `FoxconsScheduleEntry` |
-| licznik rejestracji | `counter/` |
+| harmonogram Foxcons | `FoxconsHall`, `FoxconsScheduleEntry` |
+| punkt programu | `FoxconsScheduleEntry` |
+| stanowisko rejestracji | `counter/` (w interfejsie: „licznik rejestracji Foxcons”) |
+| Foxcons | `backend/services/foxcons.py` |
+| interfejs | `frontend/` |
+| serwer | `backend/` |
+| aplikacja (moduł serwera) | aplikacja Django, np. `backend/shifts/` |
+| zadanie w tle | zadania Celery, `backend/*/tasks.py` |
+| dostawca logowania | `allauth.socialaccount.providers.openid_connect`, `backend/services/oidc.py` |
+| plik prywatny | `private_storage`, `agreements.auth.private_file_auth_function` |
+| historia zmian | `django-simple-history`, modele `Historical…` |
+| aplikacja PWA | `frontend/src/sw.ts`, `vite-plugin-pwa` |
+| powiadomienie na urządzenie | `PushSubscription`, `backend/services/web_push.py` |
+| kopia zapasowa | `docker/backup/` |

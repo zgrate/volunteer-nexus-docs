@@ -1,6 +1,6 @@
 # Generator diagramu modelu danych
 
-Odtwarza diagram z modeli działającego backendu. Wynik (plik `.drawio` i jego eksport `.svg`) trafia do `doc-writer/static/diagramy/`, skąd wyświetla go strona „Post-Futrołajki Model Danych”.
+Odtwarza diagram z modeli działającego backendu. Wynik (plik `.drawio` i jego eksport `.svg`) trafia do `doc-writer/static/diagramy/`, skąd wyświetla go strona „Model Danych”.
 
 ```bash
 # 1. Lista modeli i relacji z rejestru Django (w katalogu głównym repozytorium)
