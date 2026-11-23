@@ -87,3 +87,7 @@ Kolumna „Nie używamy” przeniesiona ze słownika.
 | aplikacja PWA | `frontend/src/sw.ts`, `vite-plugin-pwa` |
 | powiadomienie na urządzenie | `PushSubscription`, `backend/services/web_push.py` |
 | kopia zapasowa | `docker/backup/` |
+| skrzynka powiadomień | `OutboundMessageLog` (`backend/core/models.py`) – do sprawdzenia |
+| przypomnienie o zmianie | `ShiftReminderNotification` |
+| Mailer | `BulkEmailTask` |
+| numer telefonu | w v1 nie ma |

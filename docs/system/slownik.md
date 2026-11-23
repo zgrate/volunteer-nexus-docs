@@ -72,20 +72,28 @@ Słownik ma trzy części: pojęcia opisujące wydarzenie i wolontariuszy, któr
 | Konto | Zapis osoby w systemie, jeden dla wszystkich wydarzeń, rozpoznawany po adresie e-mail. Konto pozwala się zalogować; dostęp do spraw wydarzenia daje dopiero uczestnictwo. |
 | Konto nieaktywne | Konto, które nie pozwala korzystać z systemu. Wyłącza je administrator albo system. |
 | Wyłączenie w wydarzeniu | Stan, w którym osoba traci dostęp do spraw jednego wydarzenia, ale nadal może się zalogować i korzystać z innych wydarzeń. |
-| Kod logowania | Jednorazowy kod wysyłany na adres e-mail osoby, którym loguje się ona zamiast hasłem. Jest ważny 15 minut. |
+| Kod logowania | Jednorazowy kod, którym osoba loguje się zamiast hasłem. System wysyła go kanałem powiadomień wybranym przez osobę. Jest ważny 15 minut. |
 | Sesja | Zalogowanie osoby na jednym urządzeniu. Odnawia się, gdy osoba korzysta z systemu, i wygasa po 30 dniach bez użycia. |
 | Profil | Dane osoby w systemie: dane podstawowe, wspólne dla konta, oraz odpowiedzi na pola niestandardowe, osobne dla każdego wydarzenia. |
 | Dane podstawowe | Dane osoby wspólne dla konta: imię i nazwisko, nickname, adres e-mail, kontakt na Telegramie oraz pola systemowe. Osoba wpisuje je raz; później zmienia je organizator. |
 | Pole systemowe | Pole niestandardowe wspólne dla konta, a nie dla jednego wydarzenia, np. PESEL. Rozszerza dane podstawowe. |
 | Zdjęcie profilowe | Zdjęcie osoby widoczne dla zalogowanych wolontariuszy wydarzenia. |
 | Lista kontrolna | Lista kroków, które osoba musi wykonać przed wydarzeniem, z informacją, ile już wykonała. Wydarzenie wybiera, których kroków używa. |
-| Udostępnianie kontaktu | Ustawienie w profilu, którym osoba decyduje, czy inni wolontariusze wydarzenia widzą jej adres e-mail i kontakt na Telegramie. Domyślnie wyłączone. |
+| Dane kontaktowe | Dane, którymi można skontaktować się z osobą: adres e-mail konta, kontakt na Telegramie i numer telefonu. Adres e-mail i kontakt na Telegramie są wymagane, numer telefonu nie. |
+| Kontakt na Telegramie | Nazwa użytkownika osoby na Telegramie albo konto połączone z Telegramem. Dopiero połączenie konta pozwala systemowi wysyłać osobie wiadomości na Telegramie. |
+| Udostępnianie kontaktu | Ustawienie w profilu, którym osoba decyduje, czy inni wolontariusze wydarzenia widzą jej adres e-mail, kontakt na Telegramie i numer telefonu – każde osobno. Domyślnie wyłączone. |
 | Ustawienia lokalizacyjne | Sposób zapisu danych zależnych od kraju, np. format daty. Osoba ustawia je w profilu obok języka. |
 | Identyfikator Foxcons | Numer, który łączy osobę z jej rejestracją w Foxcons. Jest przypisany do wydarzenia. |
 | Nickname | Nazwa, pod którą osoba jest znana na wydarzeniu. Osoba podaje ją obok imienia i nazwiska. |
 | Rola | Zestaw uprawnień nadawany osobie. |
 | Uprawnienie | Pozwolenie na konkretną czynność w systemie, np. przeglądanie aplikacji albo decyzję w dziale. Nie mylić z dostępem. |
-| Kanał powiadomień | Droga, którą system wysyła osobie wiadomość, np. e-mail, Telegram albo powiadomienie na urządzenie. Osoba wybiera kanał dla swoich powiadomień. |
+| Kanał powiadomień | Droga, którą system wysyła osobie wiadomości: e-mail albo Telegram. Osoba wybiera kanał w profilu. Gdy wiadomości nie da się dostarczyć wybranym kanałem, system wysyła ją e-mailem. |
+| Powiadomienie | Wiadomość, którą system wysyła osobie, np. o przydziale do zmiany albo o decyzji w sprawie aplikacji. Ma tytuł adekwatny do treści. |
+| Rodzaj powiadomień | Grupa powiadomień o tej samej sprawie, np. przydział do zmiany. Osoba wybiera, które rodzaje chce dostawać; części rodzajów nie może wyłączyć. |
+| Skrzynka powiadomień | Miejsce w systemie, w którym osoba widzi wiadomości wysłane do niej wszystkimi kanałami, także te niedostarczone. Wiadomości są przechowywane 365 dni; osoba może wcześniej usunąć wybrane. |
+| Przypomnienie o zmianie | Powiadomienie wysyłane osobie przed zmianą, do której jest przydzielona. Osoba ustawia, ile czasu przed zmianą je dostaje; domyślnie godzinę przed, kwadrans przed i w chwili rozpoczęcia. |
+| Kod potwierdzający | Jednorazowy kod, którym osoba bez konta potwierdza adres e-mail w aplikacji wolontariackiej. Przychodzi zawsze e-mailem i nie loguje osoby. |
+| Mailer | Miejsce w systemie, z którego organizator wysyła wiadomość do wybranych osób, do członków działu albo do wszystkich uczestników wydarzenia. |
 | Panel administracyjny | Nie mylić z Django Admin. |
 | Centrum informacji | Miejsce w systemie z dokumentacją i informacjami ważnymi dla wolontariuszy. Wyświetlana publicznie dla wszystkich wolontariuszy, albo ograniczona do konkretnych działów |
 | Grupa dostępu | Zestaw działów, zespołów i wolontariuszy, którzy mogą wchodzić do tych samych stref wydarzenia. Odpowiada karcie dostępu w Foxcons. |
@@ -136,5 +144,5 @@ Pojęcia używane w dokumentacji technicznej.
 | Plik prywatny | Plik dostępny tylko po sprawdzeniu uprawnień przez serwer, np. skan umowy lub wygenerowany dokument. |
 | Historia zmian | Kopie poprzednich wersji najważniejszych danych, zapisywane przy każdej zmianie. Nie mylić ze zmianą jako odcinkiem pracy. |
 | Aplikacja PWA | Interfejs zainstalowany na urządzeniu i uruchamiany jak osobny program. Pokazuje zapisane dane, gdy serwer nie odpowiada, i odbiera powiadomienia. |
-| Powiadomienie na urządzenie | Powiadomienie wyświetlane na telefonie lub komputerze wolontariusza także wtedy, gdy aplikacja jest zamknięta. Wymaga aplikacji PWA i włączenia powiadomień na każdym urządzeniu osobno. |
+| Powiadomienie na urządzenie | Powiadomienie wyświetlane na telefonie lub komputerze wolontariusza także wtedy, gdy aplikacja jest zamknięta. Działa w przeglądarce i w aplikacji PWA; osoba włącza je na każdym urządzeniu osobno. |
 | Kopia zapasowa | Archiwum ze zrzutem bazy danych oraz plikami publicznymi i prywatnymi, tworzone codziennie. |

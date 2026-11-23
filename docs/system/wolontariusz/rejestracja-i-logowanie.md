@@ -71,7 +71,7 @@ Kod logowania spełnia następujące warunki:
 - działa tylko raz,
 - liczba próśb o kod i prób jego wpisania w ciągu minuty jest ograniczona.
 
-Osoba, która połączyła konto z Telegramem, może dostawać kod także tam. Włącza to w profilu albo zaznacza przy logowaniu.
+Kod przychodzi kanałem powiadomień, który osoba wybrała: e-mailem albo na Telegramie. Gdy kod idzie na Telegram, strona logowania prosi o odczytanie go z Telegrama i pokazuje przycisk, którym osoba wysyła kod e-mailem. Gdy kodu nie da się dostarczyć na Telegramie, przychodzi e-mailem (zob. [Sposoby kontaktu](sposoby-kontaktu.md)).
 
 ### Logowanie przez dostawcę logowania
 

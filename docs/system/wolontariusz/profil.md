@@ -121,18 +121,7 @@ Osoba dodaje, zmienia i usuwa zdjęcie profilowe. Zdjęcie widzą zalogowani wol
 
 ## Kontakt i powiadomienia
 
-W profilu osoba ustawia, jak system i inni wolontariusze mogą się z nią kontaktować:
-
-- połączenie z Telegramem – osoba łączy i rozłącza konto (zob. [Telegram](../integracje-zewnetrzne/telegram.md)),
-- kanał powiadomień – osoba wybiera kanał, którym system wysyła jej wiadomości,
-- powiadomienia na urządzenie – dodatek do wybranego kanału, włączany osobno na każdym urządzeniu,
-- rodzaje powiadomień – osoba wybiera, o czym chce dostawać powiadomienia (zob. [Rodzaje powiadomień](../powiadomienia/rodzaje-powiadomien.md)),
-- kod logowania na Telegramie – po włączeniu kod przychodzi także tam,
-- udostępnianie kontaktu – osobno dla adresu e-mail i dla kontaktu na Telegramie.
-
-Udostępniony kontakt widzą zalogowani wolontariusze wydarzenia na liście wolontariuszy. Kontakt udostępniony przez organizatora albo koordynatora działu widać także w formularzu aplikacji, bez logowania – żeby osoba mogła skontaktować się z działem, zanim zaaplikuje. Kontaktu pozostałych członków formularz nie pokazuje.
-
-Kanały opisuje strona [Kanały i ustawienia powiadomień](../powiadomienia/kanaly-i-ustawienia.md).
+W profilu osoba ustawia, jak system i inni wolontariusze mogą się z nią kontaktować: łączy konto z Telegramem, wybiera kanał i rodzaje powiadomień, włącza powiadomienia na urządzenie, ustawia pory przypomnień o zmianie oraz decyduje o udostępnianiu kontaktu. Ustawienia te i to, kto widzi kontakt osoby, opisuje strona [Sposoby kontaktu](sposoby-kontaktu.md).
 
 ## Język i ustawienia lokalizacyjne
 

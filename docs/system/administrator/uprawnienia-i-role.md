@@ -29,6 +29,10 @@ Ze strony [Rejestracja i logowanie](../wolontariusz/rejestracja-i-logowanie.md):
 - listę dostawców logowania ustawia administrator,
 - to, co osoba widzi po zalogowaniu, wynika z jej uprawnień, a nie ze sposobu logowania.
 
+Ze strony [Sposoby kontaktu](../wolontariusz/sposoby-kontaktu.md):
+
+- numer telefonu osoby, której go nie udostępniła, widzą organizatorzy jej działów, administrator oraz osoby z uprawnieniem do wglądu w dane wrażliwe albo z osobnym uprawnieniem do wglądu w numer telefonu.
+
 Ze strony [Działy i zespoły](../organizator/dzialy-i-zespoly.md):
 
 - uprawnienia do działu działają we własnych działach osoby: organizator z uprawnieniem „zarządzanie osobami w dziale” zarządza członkami działów, do których sam należy,
